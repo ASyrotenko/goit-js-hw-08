@@ -10,7 +10,7 @@ let formData = JSON.parse(localStorage.getItem(FEEDBACK)) || {};
 
 populateText();
 
-onInput = e => {
+const onInput = e => {
   formData[e.target.name] = e.target.value;
   localStorage.setItem(FEEDBACK, JSON.stringify(formData));
 };
